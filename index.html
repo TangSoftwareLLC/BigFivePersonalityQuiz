@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Big Five Personality Quiz (OCEAN)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="quiz-header">
+            <h1>🧠 Big Five Personality Quiz (OCEAN)</h1>
+            <p class="subtitle">Answer honestly. Choose A, B, or C for each question.</p>
+        </header>
+
+        <div class="quiz-container" id="quizContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Question 1 of 10</div>
+
+            <div class="question-container" id="questionContainer">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
+                <button class="btn btn-primary" id="nextBtn" disabled>Next</button>
+            </div>
+        </div>
+
+        <div class="results-container" id="resultsContainer" style="display: none;">
+            <h2>🎉 Your Personality Results</h2>
+            <div class="results-summary" id="resultsSummary"></div>
+            <div class="detailed-results" id="detailedResults"></div>
+            <button class="btn btn-primary" id="retakeBtn">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
